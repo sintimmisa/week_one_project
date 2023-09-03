@@ -1,0 +1,85 @@
+
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ max-width:1440px;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraph*/
+  --very-light-gray: hsl(0, 0%, 95%); /**background*, heading, button*/
+
+  /*fonts*/
+
+
+
+}
+
+
+
+.card{
+    
+    padding: 70px 50px;
+    height: 400px;
+   
+   
+    
+}
+.card-body{
+    margin: 10% 0;
+}
+
+.card:first-child{
+    background: var(--bright-orange);
+    border-radius:10px 0 0 10px;
+}
+
+.card:nth-child(even){
+    background: var(--dark-cyan);
+}
+
+.card:last-child{
+    background: var(--very-dark-cyan);
+    border-radius:0 10px 10px 0;
+}
+
+.card-title{
+    
+    color:var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: "lexend,deca";
+
+}
+
+.card-description{
+    margin-top:30px;
+    color: var(--transparent-white);
+    
+}
+
+.card-btn{
+    margin : 15px 0 25px 0;
+
+}
+
+.card-btn {
+    border: none;
+    outline:none;
+    text-decoration:none;
+    background-color:var(--very-light-gray);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+}
+
+
+
+.card-btn:nth-child(odd){
+    color: var(--bright-orange)!important;
+}
